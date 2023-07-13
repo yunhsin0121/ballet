@@ -1,0 +1,9 @@
+.card-img-rounded{
+    border-radius: 1rem 1rem 0rem 0rem;
+    @media (max-width:991px) {
+        border-radius: 1rem 0rem 0rem 1rem;
+            @media (max-width:767px) {
+            border-radius: 1rem 1rem 0rem 0rem;
+        }
+    } 
+}

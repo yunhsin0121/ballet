@@ -1,0 +1,8 @@
+.bg-position{
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width:602px) {
+        background-position: -700px top;
+    }
+}
