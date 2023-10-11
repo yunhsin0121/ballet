@@ -36,4 +36,5 @@ $(document).ready(function () {
             $(this).addClass('text-decoration-none');
         }
     );
+    AOS.init();
 });

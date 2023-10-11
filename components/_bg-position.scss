@@ -6,3 +6,14 @@
         background-position: -700px top;
     }
 }
+.bg-contain{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bg-cover{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-position-bottom{
+    background-position: bottom left;
+}
