@@ -12,12 +12,17 @@
     <link rel="stylesheet" href="stylesheet/all.css">
 </head>
 <style>
-    .transform-2x{
-        transition:0.4s ease-in;
+    .shadow-hover{
+        transition: box-shadow 0.5s;
+        &:hover {
+            box-shadow: 0px 0px 16px 8px #E4B6B6;
+            transition: box-shadow 0.5s;
+        }
     }
-    .transform-2x:hover{
-        transform: scale(1.1,1.1);
-        transition:0.4s ease-in;
+    .link-hover{
+        &:hover {
+            transition: all 0.5s;
+        }
     }
 </style>
 <body>
@@ -34,21 +39,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto text-center">
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary px-3 mb-2 mb-lg-0" aria-current="page" href="course.html">課程介紹</a>
+                    <a class="nav-link btn btn-outline-primary fw-bold px-3 mb-2 mb-lg-0" aria-current="page" href="course.html">課程介紹</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary px-3 mb-2 mb-lg-0" href="#">芭蕾空間</a>
+                    <a class="nav-link btn btn-outline-primary fw-bold px-3 mb-2 mb-lg-0" href="#">師資介紹</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary px-3 mb-2 mb-lg-0" href="#">當月課表</a>
+                    <a class="nav-link btn btn-outline-primary fw-bold px-3 mb-2 mb-lg-0" href="#">芭蕾空間</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary fw-bold px-3 mb-2 mb-lg-0" href="#">當月課表</a>
                 </li>
                 </ul>
                 <ul class="navbar-nav ms-auto text-center">
-                <li class="nav-item">
-                    <a href="reservation.html" class="nav-link btn btn-outline-primary text-secondary me-lg-2 mb-2 mb-lg-0 px-3">立即預約</a>
+                <li class="nav-item me-lg-2">
+                    <a href="reservation.html" class="btn btn-secondary fw-bold me-lg-2 mb-2 mb-lg-0 w-100">立即預約</a>
                 </li>
                 <li class="nav-item"> 
-                    <a href="#" class="nav-link btn btn-outline-primary text-secondary px-3">聯絡我們</a>
+                    <a href="#" class="btn btn-secondary fw-bold w-100">聯絡我們</a>
                 </li>
                 </ul>
             </div>
@@ -74,7 +82,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-10 col-md-4 col-lg-4 mb-5 mb-md-0" data-aos="fade-up">
-                    <div class="card h-100 border-0 shadow overflow-hidden transform-2x">
+                    <div class="card h-100 border-0 shadow-hover hover overflow-hidden transform-2x">
                         <img src="images/dancer3.jpg" class="card-img h-100 d-none d-lg-block" alt="dancer">
                         <img src="images/dancer3(small).jpg" class="card-img h-100 d-lg-none" alt="dancer">
                         <div class="card-img-overlay top-auto top-lg-0">
@@ -84,7 +92,7 @@
                     </div>
                 </div>
                 <div class="col-10 col-md-4 col-lg-4 mb-5 mb-md-0" data-aos="fade-up">
-                    <div class="card h-100 border-0 shadow overflow-hidden transform-2x">
+                    <div class="card h-100 border-0 shadow-hover hover overflow-hidden transform-2x">
                         <img src="images/dancer1.jpg" class="card-img h-100 d-none d-lg-block" alt="dancer">
                         <img src="images/dancer1(small).jpg" class="card-img h-100 d-lg-none" alt="dancer">
                         <div class="card-img-overlay top-auto">
@@ -94,7 +102,7 @@
                     </div>
                 </div>
                 <div class="col-10 col-md-4 col-lg-4" data-aos="fade-up">
-                    <div class="card h-100 border-0 shadow overflow-hidden transform-2x">
+                    <div class="card h-100 border-0 shadow-hover hover overflow-hidden transform-2x">
                         <img src="images/dancer6.jpg" class="card-img h-100 d-none d-lg-block" alt="dancer">
                         <img src="images/dancer6(small).jpg" class="card-img h-100 d-lg-none" alt="dancer">
                         <div class="card-img-overlay top-auto top-lg-0">
@@ -112,7 +120,7 @@
                     <div class="col-12 col-md-6 my-auto px-lg-3 text-center">
                         <h2 class="text-secondary fw-bold mb-3">舒適空間、舞動腳尖</h2>
                         <p class="mb-3">用音樂、節奏和優美的動作，<br>一起探索芭蕾的奧秘</p>
-                        <a href="#" class="text-decoration-none link-secondary">環境介紹<i class="fa-solid fa-right-long ms-2"></i></a>
+                        <a href="#" class="text-decoration-none link-secondary stretched-link">環境介紹<i class="fa-solid fa-right-long ms-2"></i></a>
                     </div>
                     <div class="col-12 col-md-3 d-flex flex-md-column justify-content-between p-md-3">
                         <div class="col-6 col-md-12 p-3 p-md-0">
@@ -141,7 +149,7 @@
                     <div class="text-center py-4">
                         <h2 class="text-primary fw-bold mb-3 d-none d-md-block">精心設計、課程多元</h2>
                         <p class="mb-3">教師帶領多元課程，釋放壓力， <br>進而最大化身體的靈活性</p>
-                        <a href="#" class="text-decoration-none link-primary">課程介紹<i class="fa-solid fa-right-long ms-2"></i></a>
+                        <a href="#" class="text-decoration-none link-primary stretched-link">課程介紹<i class="fa-solid fa-right-long ms-2"></i></a>
                     </div>   
                 </div>
             </div>
@@ -156,7 +164,7 @@
                     <div class="text-center py-4">
                         <h2 class="text-primary fw-bold mb-3 d-none d-md-block">頂尖師資、專業教學</h2>
                         <p class="mb-3">強力師資、經歷豐富，<br> 協會認證、引導式教學，<br> 針對不同需求的人制定專屬課程</p>
-                        <a href="#" class="text-decoration-none link-primary">師資介紹<i class="fa-solid fa-right-long ms-2"></i></a>
+                        <a href="#" class="text-decoration-none link-primary stretched-link">師資介紹<i class="fa-solid fa-right-long ms-2"></i></a>
                     </div>    
                 </div>
             </div>
@@ -170,7 +178,7 @@
                 </div>
                 <div class="row row-cols-1 row-cols-lg-3 justify-content-center gy-4 px-4 mb-4">
                     <div class="col" data-aos="fade-up">
-                        <div class="card flex-md-row flex-lg-column h-100">
+                        <div class="card flex-md-row flex-lg-column h-100 shadow-hover">
                             <div class="col-12 col-md-6 col-lg-12">
                                 <img src="images/dancer17.png" class="img-fluid" alt="">
                             </div>
@@ -179,13 +187,13 @@
                                     <h3 class="card-title fs-5 fw-bold text-secondary">首次體驗</h3>
                                     <h4 class="card-subtitle text-primary fs-5 fw-bold mb-2">NT$500/次</h4>
                                     <p class="mb-3">分基礎、中級、高級，<br>初次Ballet上課建議選擇此方案。</p>
-                                    <a href="#" class="card-link btn btn-primary w-100">選擇課程</a>
+                                    <a href="#" class="card-link btn btn-primary w-100 stretched-link">選擇課程</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col" data-aos="fade-up">
-                        <div class="card border-primary flex-md-row flex-lg-column h-100">
+                        <div class="card border-primary flex-md-row flex-lg-column h-100 shadow-hover">
                             <div class="col-12 col-md-6 col-lg-12">
                                 <img src="images/dancer16.png" class="img-fluid" alt="">
                             </div>
@@ -194,13 +202,13 @@
                                     <h3 class="card-title fs-5 fw-bold text-secondary">短期體驗</h3>
                                     <h4 class="card-subtitle text-primary fs-5 fw-bold mb-2">NT$2800/月</h4>
                                     <p class="mb-3">分基礎、中級、高級，<br>想試著培養跳芭蕾者可以選擇此方案</p>
-                                    <a href="#" class="card-link btn btn-primary w-100">選擇課程</a>
+                                    <a href="#" class="card-link btn btn-primary w-100 stretched-link">選擇課程</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col" data-aos="fade-up">
-                        <div class="card flex-md-row flex-lg-column h-100 border-primary">
+                        <div class="card flex-md-row flex-lg-column h-100 shadow-hover">
                             <div class="col-12 col-md-6 col-lg-12">
                                 <img src="images/dancer11.png" class="img-fluid" alt="">
                             </div>
@@ -209,7 +217,7 @@
                                     <h3 class="card-title fs-5 fw-bold text-secondary">長期體驗</h3>
                                     <h4 class="card-subtitle text-primary fs-5 fw-bold mb-2">NT$7800/季</h4>
                                     <p class="mb-3">分基礎、中級、高級，<br>長期跳芭蕾者建議選擇此方案</p>
-                                    <a href="#" class="card-link btn btn-primary w-100">選擇課程</a>
+                                    <a href="#" class="card-link btn btn-primary w-100 stretched-link">選擇課程</a>
                                 </div>
                             </div>
                         </div>
@@ -346,7 +354,7 @@
             <div class="container py-10">
                 <div class="row">
                     <div class="col-md-8 ms-auto">
-                        <h3 class="mb-3 text-center text-md-start fw-bold text-secondary">輸入信箱， <br class="d-lg-none">獲得課程優惠碼及最新資訊！</h2>
+                        <h3 class="mb-3 text-center text-md-start fw-bold">輸入信箱， <br class="d-lg-none">獲得課程優惠碼及最新資訊！</h2>
                         <form action="#">
                           <div class="input-group w-100">
                             <input type="email" name="email" class="form-control border border-2 border-primary" placeholder="請輸入email">

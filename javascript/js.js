@@ -22,7 +22,7 @@ $(document).ready(function () {
         $(this).toggleClass('animate__animated animate__headShake');
     });
 
-    $('.nav-link,header a,.programs .card-link,.slideUp a,footer .btn,footer li').hover(function () {
+    $('.nav-item,header a,.programs .card-link,.slideUp a').hover(function () {
         $(this).toggleClass('animate__animated animate__pulse');
     });
 
