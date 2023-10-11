@@ -110,6 +110,7 @@ $utilities: map-merge(
     "start": (
       property: left,
       class: start,
+      responsive: true,
       values: $position-values
     ),
     "end": (

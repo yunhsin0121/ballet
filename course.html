@@ -4,282 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>課程介紹－Ballet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet/all.css">
 </head>
 <body>
   <div class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-    <div class="container-lg">
-        <a class="navbar-brand" href="index.html">
-        <img src="images/logo-gray.png" alt="logo" width="180" class="img-fluid">
-        <h1 class="d-none">Ballet</h1>
-        </a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars text-light-secondary fs-2"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto text-center">
-            <li class="nav-item">
-                <a class="nav-link btn btn-outline-primary fw-bold px-3 mb-2 mb-lg-0" aria-current="page" href="course.html">課程介紹</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link btn btn-outline-primary fw-bold px-3 mb-2 mb-lg-0" href="#">芭蕾空間</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link btn btn-outline-primary fw-bold px-3 mb-2 mb-lg-0" href="#">當月課表</a>
-            </li>
-            </ul>
-            <ul class="navbar-nav ms-auto text-center">
-            <li class="nav-item me-lg-2">
-                <a href="reservation.html" class="btn btn-secondary fw-bold me-lg-2 mb-2 mb-lg-0 w-100">立即預約</a>
-            </li>
-            <li class="nav-item"> 
-                <a href="#" class="btn btn-secondary fw-bold w-100">聯絡我們</a>
-            </li>
-            </ul>
-        </div>
-    </div>
+      <div class="container-lg">
+          <a class="navbar-brand" href="index.html">
+          <img src="images/logo-gray.png" alt="logo" width="180" class="img-fluid">
+          <h1 class="d-none">Ballet</h1>
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars text-light-secondary fs-2"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item">
+                  <a class="nav-link btn btn-outline-primary fw-bold px-3 mb-2 mb-lg-0" aria-current="page" href="course.html">課程介紹</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link btn btn-outline-primary fw-bold px-3 mb-2 mb-lg-0" href="teachers.html">師資介紹</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link btn btn-outline-primary fw-bold px-3 mb-2 mb-lg-0" href="#">芭蕾空間</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link btn btn-outline-primary fw-bold px-3 mb-2 mb-lg-0" href="#">當月課表</a>
+              </li>
+              </ul>
+              <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item me-lg-2">
+                  <a href="reservation.html" class="btn btn-secondary fw-bold me-lg-2 mb-2 mb-lg-0 w-100">立即預約</a>
+              </li>
+              <li class="nav-item"> 
+                  <a href="#" class="btn btn-secondary fw-bold w-100">聯絡我們</a>
+              </li>
+              </ul>
+          </div>
+      </div>
     </nav>
 </div>
-    <main>
-    <section class="popular mb-5">
-        <div class="container py-4">
-            <h2 class="text-secondary text-center mb-4">課程介紹</h2>
-            <div class="row gx-md-4 g-4 g-lg-5 justify-content-center">
-                <div class="col-12 col-md-6 d-flex align-items-center">
-                    <img src="images/class4.png" class="img-fluid rounded-4" alt="">
-                </div>
-                <div class="col-12 col-md-6 d-flex flex-column py-3">
-                        <h3 class="h4 text-primary mb-2">人氣課程 - 芭蕾伸展分析</h3>
-                        <h4 class="h5 text-secondary mb-3">授課老師:Agnes</h4>
-                    <div class="d-flex flex-column justify-content-between flex-grow-1">  
-                        <p>以芭蕾基本動作為基底，教學員感受呼吸與動作的關係，
-                            透過身體延展度、放鬆性、與肌耐力的持續鍛鍊，
-                            建立學員舞動芭蕾時身體運作的正確觀念，
-                            新手也非常適合的課程。
-                        </p>
-                        <div>
-                          <a href="reservation.html" class="btn btn-primary px-3">立即預約</a>
-                        </div>    
+    <main class="pt-5">
+      <section class="container py-4">
+            <h2 class="text-secondary text-center fw-bold mb-4" data-aos="fade-up">課程介紹</h2>
+            <div class="row flex-column flex-lg-row justify-content-center">
+              <div class="col-12 col-lg-8">
+                <div class="course-item">
+                  <div class="row mb-2 mb-md-3 mb-lg-4 gx-2 gx-md-3 gx-lg-4" data-aos="fade-up">
+                    <div class="col-5">
+                      <div class="card shadow">
+                        <span class="badge p-2 fs-6 rounded-pill bg-primary position-absolute top-0 start-0 translate-middle-y z-3">60 min</span>
+                        <img src="images/course-1.png" class="card-img" alt="">
+                        <div class="card-img-overlay d-flex align-items-end p-0 shadow-hover h-100">
+                          <div class="card-body text-white fw-bold">
+                            <a href="#" class="card-title fs-4 stretched-link">芭蕾(入門)</a>
+                              <p class="card-text d-none d-md-block">授課老師:Daphne</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                </div>   
-            </div>
-        </div>
-    </section>
-    <section class="search container-fluid py-4 bg-primary mb-5">
-      <div class="container">
-        <form action="#" class="d-flex justify-content-between">
-          <div class="input-group">
-            <input type="text" class="form-control border border-2 border-light-secondary" placeholder="請輸入要搜尋的課程">
-            <button type="submit" class="btn btn-primary border border-2 border-light-secondary border-start-0">搜尋</button>
-          </div>
-          <select class="form-select w-25 ms-2">
-            <option selected>課程</option>
-            <option value="1">one</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </form>
-      </div>
-    </section>  
-    <section class="course-detail mb-5 border-bottom border-primary">
-      <div class="container py-4">
-        <div class="row flex-column flex-lg-row justify-content-center">
-          <div class="col-12 col-lg-8">
-            <div class="course-item">
-              <div class="row mb-2 mb-md-3 mb-lg-4 gx-2 gx-md-3 gx-lg-4">
-                <div class="col-5">
-                  <div class="card border-0">
-                    <span class="badge p-2 fs-6 rounded-pill bg-primary position-absolute top-0 start-0 translate-middle-y">60 min</span>
-                    <img src="images/course-1.png" class="card-img" alt="">
-                    <div class="card-img-overlay top-auto p-0">
-                      <div class="card-body text-white fw-bold">
-                        <a href="#" class="card-title h4 text-decoration-none stretched-link">芭蕾(入門)</a>
-                          <p class="card-text d-none d-md-block">授課老師:Daphne</p>
+                    <div class="col-7">
+                      <div class="card shadow">
+                        <span class="badge p-2 fs-6 rounded-pill bg-primary position-absolute top-0 start-0 translate-middle-y z-3">60 min</span>
+                        <img src="images/course-2.png" class="card-img" alt="">
+                        <div class="card-img-overlay d-flex align-items-end p-0 shadow-hover h-100">
+                          <div class="card-body text-white fw-bold">
+                            <a href="#" class="card-title fs-4 stretched-link">芭蕾(初階)</a>
+                              <p class="card-text d-none d-md-block">授課老師:Jessica</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-7">
-                  <div class="card border-0">
-                    <span class="badge p-2 fs-6 rounded-pill bg-primary position-absolute top-0 start-0 translate-middle-y">60 min</span>
-                    <img src="images/course-2.png" class="card-img" alt="">
-                    <div class="card-img-overlay top-auto p-0">
-                      <div class="card-body text-white fw-bold">
-                        <a href="#" class="card-title h4 text-decoration-none stretched-link">芭蕾(初階)</a>
-                          <p class="card-text d-none d-md-block">授課老師:Jessica</p>
+                  <div class="row mb-2 mb-md-3 mb-lg-4 gx-2 gx-md-3 gx-lg-4" data-aos="fade-up">
+                    <div class="col-7">
+                      <div class="card shadow shadow-hover">
+                        <span class="badge p-2 fs-6 rounded-pill bg-primary position-absolute top-0 start-0 translate-middle-y z-3">60 min</span>
+                        <img src="images/course-3.png" class="card-img" alt="">
+                        <div class="card-img-overlay d-flex align-items-end p-0 shadow-hover h-100">
+                          <div class="card-body text-white fw-bold">
+                            <a href="#" class="card-title fs-4 stretched-link">芭蕾(進階)</a>
+                              <p class="card-text d-none d-md-block">授課老師:Giselle</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="card shadow">
+                        <span class="badge p-2 fs-6 rounded-pill bg-primary position-absolute top-0 start-0 translate-middle-y z-3">60 min</span>
+                        <img src="images/course-4.png" class="card-img" alt="">
+                        <div class="card-img-overlay d-flex align-items-end p-0 shadow-hover h-100">
+                          <div class="card-body text-white fw-bold">
+                            <a href="#" class="card-title fs-4 stretched-link">芭蕾伸展班</a>
+                              <p class="card-text d-none d-md-block">授課老師:Agnes</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="row mb-2 mb-md-3 mb-lg-4 gx-2 gx-md-3 gx-lg-4">
-                <div class="col-7">
-                  <div class="card border-0">
-                    <span class="badge p-2 fs-6 rounded-pill bg-primary position-absolute top-0 start-0 translate-middle-y">60 min</span>
-                    <img src="images/course-3.png" class="card-img" alt="">
-                    <div class="card-img-overlay top-auto p-0">
-                      <div class="card-body text-white fw-bold">
-                        <a href="#" class="card-title h4 text-decoration-none stretched-link">芭蕾(進階)</a>
-                          <p class="card-text d-none d-md-block">授課老師:Giselle</p>
+                  <div class="row mb-2 mb-md-3 mb-lg-4 gx-2 gx-md-3 gx-lg-4" data-aos="fade-up">
+                    <div class="col-5">
+                      <div class="card shadow">
+                        <span class="badge p-2 fs-6 rounded-pill bg-primary position-absolute top-0 start-0 translate-middle-y z-3">90 min</span>
+                        <img src="images/course-5.png" class="card-img" alt="">
+                        <div class="card-img-overlay d-flex align-items-end p-0 shadow-hover h-100">
+                          <div class="card-body text-white fw-bold">
+                            <a href="#" class="card-title fs-4 stretched-link">芭蕾硬鞋班</a>
+                              <p class="card-text d-none d-md-block">授課老師:Elvira</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-5">
-                  <div class="card border-0">
-                    <span class="badge p-2 fs-6 rounded-pill bg-primary position-absolute top-0 start-0 translate-middle-y">60 min</span>
-                    <img src="images/course-4.png" class="card-img" alt="">
-                    <div class="card-img-overlay top-auto p-0">
-                      <div class="card-body text-white fw-bold">
-                        <a href="#" class="card-title h4 text-decoration-none stretched-link">芭蕾伸展班</a>
-                          <p class="card-text d-none d-md-block">授課老師:Agnes</p>
+                    <div class="col-7">
+                      <div class="card shadow">
+                        <span class="badge p-2 fs-6 rounded-pill bg-primary position-absolute top-0 start-0 translate-middle-y z-3">90 min</span>
+                        <img src="images/course-6.png" class="card-img" alt="">
+                        <div class="card-img-overlay d-flex align-items-end p-0 shadow-hover h-100">
+                          <div class="card-body text-white fw-bold">
+                            <a href="#" class="card-title fs-4 stretched-link">芭蕾小品班</a>
+                              <p class="card-text d-none d-md-block">授課老師:karina</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="row mb-2 mb-md-3 mb-lg-4 gx-2 gx-md-3 gx-lg-4">
-                <div class="col-5">
-                  <div class="card border-0">
-                    <span class="badge p-2 fs-6 rounded-pill bg-primary position-absolute top-0 start-0 translate-middle-y">90 min</span>
-                    <img src="images/course-5.png" class="card-img" alt="">
-                    <div class="card-img-overlay top-auto p-0">
-                      <div class="card-body text-white fw-bold">
-                        <a href="#" class="card-title h4 text-decoration-none stretched-link">芭蕾硬鞋班</a>
-                          <p class="card-text d-none d-md-block">授課老師:Elvira</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-7">
-                  <div class="card border-0">
-                    <span class="badge p-2 fs-6 rounded-pill bg-primary position-absolute top-0 start-0 translate-middle-y">90 min</span>
-                    <img src="images/course-6.png" class="card-img" alt="">
-                    <div class="card-img-overlay top-auto p-0">
-                      <div class="card-body text-white fw-bold">
-                        <a href="#" class="card-title h4 text-decoration-none stretched-link">芭蕾小品班</a>
-                          <p class="card-text d-none d-md-block">授課老師:karina</p>
-                      </div>
-                    </div>
-                  </div>
+              <div class="col-12 col-lg-4 align-self-center" data-aos="fade-up">
+                <div class="course-attention p-3 text-secondary">
+                  <h3 class="mb-3 fw-bold">上課須知：</h3>
+                  <ul class="list-unstyled">
+                    <li class="d-flex align-items-start mb-1">
+                      <i class="bi bi-1-circle"></i>
+                      <span>請攜帶毛巾、水和乾淨室內運動鞋</span>
+                    </li>
+                    <li class="d-flex align-items-start mb-1">
+                      <i class="bi bi-2-circle"></i>
+                      <span>運動中需穿著較彈性、吸汗、透氣的衣物，可穿著較貼身的運動衣，以便教練指導與自我矯正</span>
+                    </li>
+                    <li class="d-flex align-items-start mb-1">
+                      <i class="bi bi-3-circle"></i>
+                      <span>運動過程中若感到任何不適，請馬上停止且與老師商量討論，若懷孕或特殊疾病請先告知</span>
+                    </li>
+                    <li class="d-flex align-items-start">
+                      <i class="bi bi-4-circle"></i>
+                      <span>若有懷孕或特殊疾病請務必事先告知</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-lg-4">
-            <div class="course-attention p-3 text-secondary">
-              <h3 class="ms-3 mb-3 fw-bold">上課須知：</h3>
-              <ul>
-                <li>請攜帶毛巾、水和乾淨室內運動鞋。</li>
-                <li>運動中需穿著較彈性、吸汗、透氣的衣物，可穿著較貼身的運動衣，以便教練指導與自我矯正。</li>
-                <li>運動過程中若感到任何不適，請馬上停止且與老師商量討論。 若懷孕或特殊疾病請先告知。</li>
-              </ul>
+      </section> 
+      <hr class="border-3 border-primary">
+      <section class="container py-4 mb-5">
+          <div class="row flex-md-row-reverse justify-content-center">
+            <div class="col-md-6 col-lg-5 d-flex align-items-center position-relative mb-3 mb-md-0" data-aos="fade-up">
+              <span class="badge p-2 fs-6 rounded-pill bg-primary position-absolute top-0 start-0 translate-middle-y z-3">90 min</span>
+                <img src="images/class4.png" class="img-fluid shadow" alt="">
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- <section class="teacher-detail mb-5">
-      <div class="container py-4">
-        <h2 class="text-secondary text-center mb-4">師資介紹</h2>
-        <div class="row overflow-scroll flex-nowrap py-5 px-3">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card bg-primary text-white px-2 pt-5 border-0">
-              <img src="images/teacher1.png" class="position-absolute top-0 start-50 translate-middle" alt="teacher-img" width="80">
-              <div class="card-body">
-                <h4 class="card-title text-center mb-2">Agnes 老師</h4>
-                <p class="text-center mb-3">教學經歷 10 年</p>
-                <p class="mb-3">"因為芭蕾讓我重新認識自己的身體，也讓我有了不一樣的人生。 我希望能跟學生們分享芭蕾的好，讓大 家能藉由芭蕾看見自己的內在與潛能。"</p>
-                <ul class="p-2 border-top border-light-primary">
-                  <li>協會認證艾揚格瑜珈老師</li>
-                  <li>2010 年完成四年的艾揚格師資培訓</li>
-                  <li>2020 取得艾揚格瑜珈高階認證</li>
-                </ul>
+            <div class="col-md-6 col-lg-7 d-flex flex-column py-3" data-aos="fade-up">
+              <div class="d-flex flex-column justify-content-between flex-grow-1"> 
+                  <div>
+                    <h4 class="fw-bold text-primary mb-2">本月限定課程 - 芭蕾伸展分析</h4>
+                    <p class="fs-5 fw-bold text-secondary mb-3">授課老師 : Agnes</p>
+                  </div> 
+                  <p class="mb-3">以芭蕾基本動作為基底，教學員感受呼吸與動作的關係，
+                      透過身體延展度、放鬆性、與肌耐力的持續鍛鍊，
+                      建立學員舞動芭蕾時身體運作的正確觀念，
+                      新手也非常適合的課程。
+                  </p>
+                  <div class="ms-auto">
+                    <a href="reservation.html" class="btn btn-primary fw-bold px-3">立即預約</a>
+                  </div>    
               </div>
-            </div>
+            </div>   
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card bg-light-primary text-secondary px-2 pt-5 border-0">
-              <img src="images/teacher1.png" class="position-absolute top-0 start-50 translate-middle" alt="teacher-img" width="80">
-              <div class="card-body">
-                <h4 class="card-title text-center mb-2">Daphne 老師</h4>
-                <p class="text-center mb-3">教學經歷 10 年</p>
-                <p class="mb-3">"因為芭蕾讓我重新認識自己的身體，也讓我有了不一樣的人生。 我希望能跟學生們分享芭蕾的好，讓大 家能藉由芭蕾看見自己的內在與潛能。"</p>
-                <ul class="p-2 border-top border-light-primary">
-                  <li>協會認證艾揚格瑜珈老師</li>
-                  <li>2010 年完成四年的艾揚格師資培訓</li>
-                  <li>2020 取得艾揚格瑜珈高階認證</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card bg-primary text-white px-2 pt-5 border-0">
-              <img src="images/teacher1.png" class="position-absolute top-0 start-50 translate-middle" alt="teacher-img" width="80">
-              <div class="card-body">
-                <h4 class="card-title text-center mb-2">Jessica 老師</h4>
-                <p class="text-center mb-3">教學經歷 10 年</p>
-                <p class="mb-3">"因為芭蕾讓我重新認識自己的身體，也讓我有了不一樣的人生。 我希望能跟學生們分享芭蕾的好，讓大 家能藉由芭蕾看見自己的內在與潛能。"</p>
-                <ul class="p-2 border-top border-light-primary">
-                  <li>協會認證艾揚格瑜珈老師</li>
-                  <li>2010 年完成四年的艾揚格師資培訓</li>
-                  <li>2020 取得艾揚格瑜珈高階認證</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card bg-light-primary text-secondary px-2 pt-5 border-0">
-              <img src="images/teacher1.png" class="position-absolute top-0 start-50 translate-middle" alt="teacher-img" width="80">
-              <div class="card-body">
-                <h4 class="card-title text-center mb-2">Giselle 老師</h4>
-                <p class="text-center mb-3">教學經歷 10 年</p>
-                <p class="mb-3">"因為芭蕾讓我重新認識自己的身體，也讓我有了不一樣的人生。 我希望能跟學生們分享芭蕾的好，讓大 家能藉由芭蕾看見自己的內在與潛能。"</p>
-                <ul class="p-2 border-top border-light-primary">
-                  <li>協會認證艾揚格瑜珈老師</li>
-                  <li>2010 年完成四年的艾揚格師資培訓</li>
-                  <li>2020 取得艾揚格瑜珈高階認證</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card bg-primary text-white px-2 pt-5 border-0">
-              <img src="images/teacher1.png" class="position-absolute top-0 start-50 translate-middle" alt="teacher-img" width="80">
-              <div class="card-body">
-                <h4 class="card-title text-center mb-2">Elvira 老師</h4>
-                <p class="text-center mb-3">教學經歷 10 年</p>
-                <p class="mb-3">"因為芭蕾讓我重新認識自己的身體，也讓我有了不一樣的人生。 我希望能跟學生們分享芭蕾的好，讓大 家能藉由芭蕾看見自己的內在與潛能。"</p>
-                <ul class="p-2 border-top border-light-primary">
-                  <li>協會認證艾揚格瑜珈老師</li>
-                  <li>2010 年完成四年的艾揚格師資培訓</li>
-                  <li>2020 取得艾揚格瑜珈高階認證</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card bg-light-primary text-secondary px-2 pt-5 border-0">
-              <img src="images/teacher1.png" class="position-absolute top-0 start-50 translate-middle" alt="teacher-img" width="80">
-              <div class="card-body">
-                <h4 class="card-title text-center mb-2">karina 老師</h4>
-                <p class="text-center mb-3">教學經歷 10 年</p>
-                <p class="mb-3">"因為芭蕾讓我重新認識自己的身體，也讓我有了不一樣的人生。 我希望能跟學生們分享芭蕾的好，讓大 家能藉由芭蕾看見自己的內在與潛能。"</p>
-                <ul class="p-2 border-top border-light-primary">
-                  <li>協會認證艾揚格瑜珈老師</li>
-                  <li>2010 年完成四年的艾揚格師資培訓</li>
-                  <li>2020 取得艾揚格瑜珈高階認證</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
+      </section>
     <section class="slideUp">
     <a href=".zip" class="btn-up text-decoration-none position-fixed bottom-2 end-3"></a>
     <section>
@@ -310,8 +215,10 @@
           </div>
       </div>
   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <script src="javascript/jquery-3.6.4.min.js"></script>
-    <script src="javascript/js.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="javascript/jquery-3.6.4.min.js"></script>
+  <script src="javascript/js.js"></script>
   </body>
 </html>

@@ -1,3 +1,15 @@
 .comment-rounded{
     border-radius: 2rem 2em 2rem 0rem;
 }
+.right-bottom-rounded{
+    border-radius: 2rem 2em 0rem 2rem;
+}
+.teacher-img{
+    width: 200px;
+    @include pad(){
+        width: 150px;
+    }
+    @include mobile(){
+        width: 100px;
+    }
+}
