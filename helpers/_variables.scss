@@ -764,6 +764,7 @@ $mark-bg:                     $yellow-100 !default;
 // scss-docs-start table-variables
 $table-cell-padding-y:        .5rem !default;
 $table-cell-padding-x:        .5rem !default;
+// **.5rem !default;
 $table-cell-padding-y-sm:     .25rem !default;
 $table-cell-padding-x-sm:     .25rem !default;
 
@@ -937,7 +938,8 @@ $input-disabled-bg:                     var(--#{$prefix}secondary-bg) !default;
 $input-disabled-border-color:           null !default;
 
 $input-color:                           var(--#{$prefix}body-color) !default;
-$input-border-color:                    var(--#{$prefix}border-color) !default;
+$input-border-color:                    $primary;
+// **var(--#{$prefix}border-color) !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
 
@@ -950,7 +952,7 @@ $input-focus-bg:                        $input-bg !default;
 $input-focus-border-color:              tint-color($component-active-bg, 50%) !default;
 $input-focus-color:                     $input-color !default;
 $input-focus-width:                     $input-btn-focus-width !default;
-$input-focus-box-shadow:                0 0 0 0.25rem #E4B6B6!default;
+$input-focus-box-shadow:                0 0 0.5rem 0 #E4B6B6!default;
 // $input-btn-focus-box-shadow !default;
 
 $input-placeholder-color:               var(--#{$prefix}secondary-color) !default;

@@ -5,3 +5,20 @@
         transition: box-shadow 0.5s;
     }
 }
+.link-secondary-hover-light{
+    color: #6c757d;
+    &:hover{
+        color: white;
+    }
+}
+.link-secondary-hover-primary{
+    color: #6c757d;
+    &:hover{
+        color: #E4B6B6;;
+    }
+}
+.btn{
+    &:hover{
+        background-color: transparent;
+    }
+}
