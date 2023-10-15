@@ -63,9 +63,9 @@
       <!-- 選擇方案 -->
       <div class="choosePlan py-4 mb-5">
         <div class="container mb-5">
-          <div class="row row-cols-1 row-cols-lg-3 justify-content-center gy-4 mb-4">
+          <div class="row row-cols-1 row-cols-lg-3 justify-content-center gy-4 mb-4 ChooseExperience">
             <div class="col">
-                <div class="card border-1 border-primary flex-md-row flex-lg-column h-100 shadow-hover" data-aos="fade-up">
+                <div class="card border-1 border-primary flex-md-row flex-lg-column h-100" data-aos="fade-up">
                     <div class="col-md-6 col-lg-12">
                         <img src="images/dancer-8.png" class="img-fluid card-img-rounded" alt="dancer-image">
                     </div>
@@ -73,12 +73,12 @@
                         <h3 class="card-title fs-5 fw-bold text-secondary">首次體驗</h3>
                         <h4 class="card-subtitle text-primary fs-5 fw-bold mb-2">NT$600/次</h4>
                         <p class="mb-3">分入門、初階和進階<br>三個階段，選擇階級後，<br>該階級課程可選擇一堂參與，<br>初次到此上課建議選擇此方案</p>
-                        <a href="#" class="card-link fw-bold btn btn-primary w-100 stretched-link">選擇課程</a>
+                        <a href="#" class="card-link fw-bold btn btn-primary w-100" data-name="firstTime">選擇</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card border-1 border-primary flex-md-row flex-lg-column h-100 shadow-hover" data-aos="fade-up">
+                <div class="card border-1 border-primary flex-md-row flex-lg-column h-100" data-aos="fade-up">
                     <div class="col-md-6 col-lg-12">
                         <img src="images/dancer-9.png" class="img-fluid card-img-rounded" alt="dancer-image">
                     </div>
@@ -86,12 +86,12 @@
                         <h3 class="card-title fs-5 fw-bold text-secondary">短期體驗</h3>
                         <h4 class="card-subtitle text-primary fs-5 fw-bold mb-2">NT$3000/月</h4>
                         <p class="mb-3">分入門、初階和進階<br>三個階段，選擇階級後，<br>當月該階級的課程都可以參與，<br>想培養跳芭蕾者可以選擇此方案</p>
-                        <a href="#" class="card-link fw-bold btn btn-primary w-100">選擇課程</a>
+                        <a href="#" class="card-link fw-bold btn btn-primary w-100" data-name="short-term" >選擇</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card border-1 border-primary flex-md-row flex-lg-column h-100 shadow-hover" data-aos="fade-up">
+                <div class="card border-1 border-primary flex-md-row flex-lg-column h-100" data-aos="fade-up">
                     <div class="col-md-6 col-lg-12">
                         <img src="images/dancer-10.png" class="img-fluid card-img-rounded" alt="dancer-image">
                     </div>
@@ -99,7 +99,7 @@
                         <h3 class="card-title fs-5 fw-bold text-secondary">長期體驗</h3>
                         <h4 class="card-subtitle text-primary fs-5 fw-bold mb-2">NT$8500/季</h4>
                         <p class="mb-3">分入門、初階和進階<br>三個階段，選擇階級後，<br>三個月內該階級課程皆可參與，<br>想長期跳芭蕾者建議選擇此方案</p>
-                        <a href="#" class="card-link fw-bold btn btn-primary w-100">選擇課程</a>
+                        <a href="#" class="card-link fw-bold btn btn-primary w-100" data-name="long-term">選擇</a>
                     </div>
                 </div>
             </div>
@@ -109,9 +109,9 @@
         <div class="bg-light-primary">
           <div class="container py-5">
             <h2 class="text-secondary text-center fw-bold mb-4" data-aos="fade-up">選擇課程階級</h2>
-            <div class="row">
+            <div class="row chooseLevel">
               <div class="col-lg-4 mb-3 mb-lg-0">
-                <div class="card fw-bold p-4 left-bottom-rounded bg-primary shadow-hover h-100" data-aos="fade-up">
+                <div class="card fw-bold p-4 left-bottom-rounded bg-primary shadow-hover h-100" data-name="beginner" data-aos="fade-up">
                   <h3 class="fw-bold mb-3 text-light">入門</h3>
                   <p class="fs-5 text-secondary mb-2">芭蕾入門班、芭蕾伸展班</p>
                   <p class="mb-3">課程時間：60min</p>
@@ -123,7 +123,7 @@
                 </div>
               </div>
               <div class="col-lg-4 mb-3 mb-lg-0">
-                <div class="card fw-bold p-4 left-bottom-rounded bg-primary shadow-hover h-100" data-aos="fade-up">
+                <div class="card fw-bold p-4 left-bottom-rounded bg-primary shadow-hover h-100" data-name="basic"  data-aos="fade-up">
                   <h3 class="fw-bold mb-3 text-light">初階</h3>
                   <p class="fs-5 text-secondary mb-2">芭蕾初階班、芭蕾硬鞋班</p>
                   <p class="mb-3">課程時間：60min</p>
@@ -135,7 +135,7 @@
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="card fw-bold p-4 left-bottom-rounded bg-primary shadow-hover h-100" data-aos="fade-up">
+                <div class="card fw-bold p-4 left-bottom-rounded bg-primary shadow-hover h-100" data-name="advanced"  data-aos="fade-up">
                   <h3 class="fw-bold mb-3 text-light">進階</h3>
                   <p class="fs-5 text-secondary mb-2">芭蕾進階班、芭蕾小品班</p>
                   <p class="mb-3">課程時間：60min</p>
@@ -181,72 +181,95 @@
       </div>
       <!-- 填寫資料 -->
       <div class="completeInformation container py-4 mb-5 d-none">
-        <p class="text-center mb-4" data-aos="fade-up">您選擇的是<span class="text-secondary fw-bold fs-4 ms-2">首次體驗課程-入門<i class="bi bi-check-circle ms-1"></i></span></p>
+        <p class="text-center mb-4" data-aos="fade-up">您選擇的是<span class="text-secondary fw-bold fs-4 ms-2 planName"><i class="bi bi-check-circle ms-1"></i></span></p>
         <div class="row justify-content-center">
           <div class="col-md-10 col-lg-8" data-aos="fade-up">
-            <form action="#">
-              <label for="experience" class="form-label">1. 是否接觸過瑜珈?</label>
-              <br>
-              <div class="form-check form-check-inline mb-4">
-                <input class="form-check-input" type="radio" name="experience" name="experience-yes" id="experience-yes" value="yes">
-                <label class="form-check-label" for="experience-yes">是</label>
+            <form action="#" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <p>1. 是否接觸過瑜珈?</p>
+                <div class="form-check form-check-inline mb-4 mb-md-0">
+                  <input class="form-check-input" type="radio" name="experience" name="experience-yes" id="experience-yes" value="yes" required>
+                  <label class="form-check-label" for="experience-yes">是</label>
+                </div>
+                <div class="form-check form-check-inline mb-4 mb-md-0">
+                  <input class="form-check-input" type="radio" name="experience" name="experience-no" id="experience-no" value="no" required>
+                  <label class="form-check-label" for="experience-no">否</label>
+                </div>
+                <div class="invalid-feedback">
+                  請選擇
+                </div>
               </div>
-              <div class="form-check form-check-inline mb-4">
-                <input class="form-check-input" type="radio" name="experience" name="experience-no" id="experience-no" value="no">
-                <label class="form-check-label" for="experience-no">否</label>
+              <div class="mb-3">
+                <p>2. 每週累積運動量約為多少？</p>
+                <div class="form-check form-check-inline mb-2 mb-md-0">
+                  <input class="form-check-input" type="radio" name="exercise" id="experience-150" value="moreThan150" required>
+                  <label class="form-check-label" for="experience-150">150 分鐘以上</label>
+                </div>
+                <div class="form-check form-check-inline mb-2 mb-md-0">
+                  <input class="form-check-input" type="radio" name="exercise" id="experience-75-150" value="75to150" required>
+                  <label class="form-check-label" for="experience-75-150">75~150 分鐘</label>
+                </div>
+                <div class="form-check form-check-inline mb-2 mb-md-0">
+                  <input class="form-check-input" type="radio" name="exercise" id="experience-30-75" value="30to75" required>
+                  <label class="form-check-label" for="experience-30-75">30~75 分鐘</label>
+                </div>
+                <div class="form-check form-check-inline mb-4 mb-md-0">
+                  <input class="form-check-input" type="radio" name="exercise" id="experience-30" value="lessThan30" required>
+                  <label class="form-check-label" for="experience-30">30 分鐘以下</label>
+                </div>
+                <div class="invalid-feedback">
+                  請選擇
+                </div>
               </div>
-              <br>
-              <label for="exercise" class="form-label">2. 每週累積運動量約為多少？</label><br>
-              <div class="form-check form-check-inline mb-2">
-                <input class="form-check-input" type="radio" name="exercise" id="experience-150" value="moreThan150">
-                <label class="form-check-label" for="experience-150">150 分鐘以上</label>
+              <div class="mb-3">
+                <label for="date" class="form-label">3. 首次上課的報到日</label><br>
+                <div class="col-6">
+                  <input type="date" id="date" class="form-control" required>
+                </div>
               </div>
-              <div class="form-check form-check-inline mb-2">
-                <input class="form-check-input" type="radio" name="exercise" id="experience-75-150" value="75to150">
-                <label class="form-check-label" for="experience-75-150">75~150 分鐘</label>
-              </div>
-              <div class="form-check form-check-inline mb-2">
-                <input class="form-check-input" type="radio" name="exercise" id="experience-30-75" value="30to75">
-                <label class="form-check-label" for="experience-30-75">30~75 分鐘</label>
-              </div>
-              <div class="form-check form-check-inline mb-4">
-                <input class="form-check-input" type="radio" name="exercise" id="experience-30" value="lessThan30">
-                <label class="form-check-label" for="experience-30">30 分鐘以下</label>
-              </div>
-              <br>
-              <label for="date" class="form-label">3. 上課預約報到日</label><br>
-              <div class="col-6">
-                <input type="date" id="date" class="form-control">
-              </div>
-              <br>
               <p>4. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
               <div class="row mb-3">
                 <div class="col-6">
-                  <label for="name" class="form-label">姓名</label>
-                  <input type="text" class="form-control" id="name" placeholder="請輸入您的姓名">
+                  <label for="name" class="form-label">姓名:</label>
+                  <input type="text" class="form-control" id="name" placeholder="請輸入您的姓名" required>
+                  <div class="invalid-feedback">
+                    請輸入內容
+                  </div>
                 </div>
                 <div class="col-6">
-                  <label for="years" class="form-label">年齡</label>
-                  <input type="number" class="form-control" id="years" placeholder="請輸入您的年齡">
+                  <label for="age" class="form-label">年齡:</label>
+                  <input type="number" class="form-control" id="age" placeholder="請輸入您的年齡" required>
+                  <div class="invalid-feedback">
+                    請輸入內容
+                  </div>
                 </div>
               </div>
               <div class="mb-3 col-6">
-                <label for="gender" class="form-label">性別</label>
-                <select class="form-select" id="gender" aria-label="Default select example">
-                  <option value="women" selected>女</option>
-                  <option value="men">男</option>
+                <label for="gender" class="form-label">性別:</label>
+                <select class="form-select" id="gender" aria-label="Default select example" required>
+                  <option value="女">女</option>
+                  <option value="男">男</option>
                 </select>
+                <div class="invalid-feedback">
+                  請輸入內容
+                </div>
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label">電子信箱</label>
-                <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                <label for="email" class="form-label">電子信箱:</label>
+                <input type="email" class="form-control" id="email" placeholder="email@example.com" required>
+                <div class="invalid-feedback">
+                  請輸入內容
+                </div>
               </div>
               <div class="mb-5">
-                <label for="number" class="form-label">手機號碼</label>
-                <input type="number" class="form-control" id="number" placeholder="0912-345-678">
+                <label for="number" class="form-label">手機號碼:</label>
+                <input type="number" class="form-control" id="number" placeholder="0912-345-678" required>
+                <div class="invalid-feedback">
+                  請輸入內容
+                </div>
               </div>
               <div class="text-center" data-aos="fade-up">
-                <button class="btn btn-primary fw-bold w-50 w-md-25">送出</button>
+                <button type="submit" class="btn btn-primary fw-bold w-50 w-md-25 submitBtn">送出</button>
               </div>
             </form>
           </div>
@@ -260,8 +283,8 @@
             <div class="card border-primary border right-bottom-rounded mb-5">
               <div class="card-title bg-primary text-light text-center fw-bold fs-4 p-3 rounded-top-5">預約資訊</div>
               <div class="card-body p-3 d-flex flex-column align-items-center">
-                <p class="mb-3">您預約的是<span class="text-secondary fw-bold fs-5 ms-1">首次體驗課程-入門</span></p> 
-                <ul class="list-unstyled">
+                <p class="mb-3">您預約的是<span class="text-secondary fw-bold fs-5 ms-1 finishedPlanName">首次體驗課程-入門</span></p> 
+                <ul class="list-unstyled reservationInfo">
                   <li class="mb-1">上課預約報到日：<span class="text-secondary fw-bold">2023/09/10</span></li>
                   <li class="mb-1">預約人：<span class="text-secondary fw-bold">Joanne Chen</span></li>
                   <li class="mb-1">年齡：<span class="text-secondary fw-bold">22 歲</span></li>
@@ -316,5 +339,26 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   <script src="javascript/jquery-3.6.4.min.js"></script>
   <script src="javascript/js.js"></script>
+  <script>
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
 </body>
 </html>
