@@ -77,6 +77,9 @@ ChooseExperience.addEventListener('click',e=>{
 // 立即預約頁面－階級按鈕切換
 let chooseLevel = document.querySelector('.chooseLevel');
 let chooseLevelMenu = document.querySelectorAll('.chooseLevel div');
+let beginnerCheck = document.querySelector('.beginnerCheck');
+let basicCheck = document.querySelector('.basicCheck');
+let advancedCheck = document.querySelector('.advancedCheck');
 console.log(chooseLevelMenu)
 chooseLevel.addEventListener('click',e=>{
     chooseLevelMenu.forEach(item=>{
@@ -84,13 +87,22 @@ chooseLevel.addEventListener('click',e=>{
     })
     let chooseLevelItem = e.target.closest('div');
    if(chooseLevelItem.dataset.name === 'beginner'){
-        chooseLevelItem.classList.add('active')
+        chooseLevelItem.classList.add('active');
+        beginnerCheck.classList.add('text-secondary');
+        basicCheck.classList.remove('text-secondary');
+        advancedCheck.classList.remove('text-secondary');
         levelName = chooseLevelItem.children[0].textContent;
    }else if(chooseLevelItem.dataset.name === 'basic'){
-        chooseLevelItem.classList.add('active')
+        chooseLevelItem.classList.add('active');
+        beginnerCheck.classList.remove('text-secondary');
+        basicCheck.classList.add('text-secondary');
+        advancedCheck.classList.remove('text-secondary');
         levelName = chooseLevelItem.children[0].textContent;
    }else{
-    chooseLevelItem.classList.add('active')
+    chooseLevelItem.classList.add('active');
+    beginnerCheck.classList.remove('text-secondary');
+    basicCheck.classList.remove('text-secondary');
+    advancedCheck.classList.add('text-secondary');
     levelName = chooseLevelItem.children[0].textContent;
    }
    console.log(levelName)
@@ -112,17 +124,17 @@ nextBtn.addEventListener('click',e=>{
         if(item.classList.contains('active')){
             chooseLevelMenu.forEach(item=>{
                 if(item.children[0].classList.contains('active')){
-                    console.log('yesssss');
                 }
              })
         }
      })
-    choosePlan.classList.add('d-none')
-    choosePlan.classList.remove('d-block')
-    completeInformation.classList.add('d-block')
-    completeInformation.classList.remove('d-none')
-    completeReservation.classList.add('d-none')
-    completeReservation.classList.remove('d-block')
+    window.scrollTo(0,0);
+    choosePlan.classList.add('d-none');
+    choosePlan.classList.remove('d-block');
+    completeInformation.classList.add('d-block');
+    completeInformation.classList.remove('d-none');
+    completeReservation.classList.add('d-none');
+    completeReservation.classList.remove('d-block');
     choosePlanBtn.classList.remove('active');
     completeInformationBtn.classList.add('active');
 })
@@ -148,13 +160,14 @@ submitBtn.addEventListener('click',e=>{
     if((date.value === '')||(guestName.value.trim() === '')||(age.value.trim() === '')||(gender.value.trim() === '')||(email.value.trim() === '')||(number.value.trim() === '')){
         alert('尚有資料未填寫')
     }else{
-        alert('已完成預約，將會寄送通知至電子信箱，如需更改資料請來電更改資料，謝謝！')
-        choosePlan.classList.add('d-none')
-        choosePlan.classList.remove('d-block')
-        completeInformation.classList.add('d-none')
-        completeInformation.classList.remove('d-block')
-        completeReservation.classList.add('d-block')
-        completeReservation.classList.remove('d-none')
+        alert('已完成預約，將會寄送通知至電子信箱，如需更改資料請來電通知，謝謝！')
+        window.scrollTo(0,0);
+        choosePlan.classList.add('d-none');
+        choosePlan.classList.remove('d-block');
+        completeInformation.classList.add('d-none');
+        completeInformation.classList.remove('d-block');
+        completeReservation.classList.add('d-block');
+        completeReservation.classList.remove('d-none');
         completeInformationBtn.classList.remove('active');
         completeReservationBtn.classList.add('active');
     }

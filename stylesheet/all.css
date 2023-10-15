@@ -16000,6 +16000,7 @@ textarea.form-control-lg {
 }
 
 .card.active {
+  background-color: transparent !important;
   box-shadow: 0px 0px 16px 8px #ffffff;
 }
 
