@@ -39,46 +39,18 @@ $(document).ready(function () {
     AOS.init();
 });
 
-// 立即預約頁面－選單頁面切換
-let reservationMenu = document.querySelector('.ReservationMenu');
-let reservationMenuArr = document.querySelectorAll('.ReservationMenu a');
+
+
+let choosePlanBtn = document.getElementById('choosePlan');
+let completeInformationBtn = document.getElementById('completeInformation');
+let completeReservationBtn = document.getElementById('completeReservation');
 let choosePlan = document.querySelector('.choosePlan');
 let completeInformation = document.querySelector('.completeInformation');
 let completeReservation = document.querySelector('.completeReservation');
-reservationMenu.addEventListener('click',e=>{ 
-    e.preventDefault();
-    reservationMenuArr.forEach(item=>{
-        item.classList.remove('active');
-    })
-    e.target.classList.add('active');
-    if(e.target.dataset.name === 'choosePlan'){
-        choosePlan.classList.add('d-block')
-        choosePlan.classList.remove('d-none')
-        completeInformation.classList.add('d-none')
-        completeInformation.classList.remove('d-block')
-        completeReservation.classList.add('d-none')
-        completeReservation.classList.remove('d-block')
-    }else if(e.target.dataset.name === 'completeInformation'){
-        choosePlan.classList.add('d-none')
-        choosePlan.classList.remove('d-block')
-        completeInformation.classList.add('d-block')
-        completeInformation.classList.remove('d-none')
-        completeReservation.classList.add('d-none')
-        completeReservation.classList.remove('d-block')
-    }else{
-        choosePlan.classList.add('d-none')
-        choosePlan.classList.remove('d-block')
-        completeInformation.classList.add('d-none')
-        completeInformation.classList.remove('d-block')
-        completeReservation.classList.add('d-block')
-        completeReservation.classList.remove('d-none')
-    }
-})
-
-
 let experienceName = '';
 let levelName = '';
-// 立即預約頁面－階級按鈕切換
+
+// 立即預約頁面－體驗選擇
 let ChooseExperience = document.querySelector('.ChooseExperience');
 let ChooseExperienceMenu = document.querySelectorAll('.ChooseExperience a');
 ChooseExperience.addEventListener('click',e=>{
@@ -102,7 +74,6 @@ ChooseExperience.addEventListener('click',e=>{
    }
 })
 
-
 // 立即預約頁面－階級按鈕切換
 let chooseLevel = document.querySelector('.chooseLevel');
 let chooseLevelMenu = document.querySelectorAll('.chooseLevel div');
@@ -125,6 +96,7 @@ chooseLevel.addEventListener('click',e=>{
    console.log(levelName)
    updatePlanName()
 })
+
 // 渲染planName的內容
 function updatePlanName(){
     let planName = document.querySelector('.planName');
@@ -133,7 +105,29 @@ function updatePlanName(){
     finishedPlanName.textContent=`${experienceName}課程-${levelName}`;
 }
 
-// 表單資料
+//點擊繼續預約按鈕跳表單內容
+let nextBtn = document.querySelector('.nextBtn');
+nextBtn.addEventListener('click',e=>{
+    ChooseExperienceMenu.forEach(item=>{
+        if(item.classList.contains('active')){
+            chooseLevelMenu.forEach(item=>{
+                if(item.children[0].classList.contains('active')){
+                    console.log('yesssss');
+                }
+             })
+        }
+     })
+    choosePlan.classList.add('d-none')
+    choosePlan.classList.remove('d-block')
+    completeInformation.classList.add('d-block')
+    completeInformation.classList.remove('d-none')
+    completeReservation.classList.add('d-none')
+    completeReservation.classList.remove('d-block')
+    choosePlanBtn.classList.remove('active');
+    completeInformationBtn.classList.add('active');
+})
+
+// 填寫資料頁面
 let date = document.getElementById('date');
 let guestName = document.getElementById('name');
 let age = document.getElementById('age');
@@ -151,6 +145,19 @@ submitBtn.addEventListener('click',e=>{
     <li class="mb-1">性別：<span class="text-secondary fw-bold">${gender.value}</span></li>
     <li class="mb-1">電子信箱：<span class="text-secondary fw-bold">${email.value}</span></li>
     <li class="mb-1">手機號碼：<span class="text-secondary fw-bold">${number.value}</span></li>`
+    if((date.value === '')||(guestName.value.trim() === '')||(age.value.trim() === '')||(gender.value.trim() === '')||(email.value.trim() === '')||(number.value.trim() === '')){
+        alert('尚有資料未填寫')
+    }else{
+        alert('已完成預約，將會寄送通知至電子信箱，如需更改資料請來電更改資料，謝謝！')
+        choosePlan.classList.add('d-none')
+        choosePlan.classList.remove('d-block')
+        completeInformation.classList.add('d-none')
+        completeInformation.classList.remove('d-block')
+        completeReservation.classList.add('d-block')
+        completeReservation.classList.remove('d-none')
+        completeInformationBtn.classList.remove('active');
+        completeReservationBtn.classList.add('active');
+    }
 })
 
 

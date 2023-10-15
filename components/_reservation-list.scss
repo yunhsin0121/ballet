@@ -1,0 +1,28 @@
+.number {
+    border: 1px solid #FDDBDB;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    background-color: #E4B6B6 ;
+    z-index: 1;
+  }
+   @include mobile() {
+    .number {
+        width: 32px;
+        height: 32px;
+    }
+  }
+  .number.active {
+    border: 1px solid #E4B6B6;
+    background-color: #FDDBDB;
+    color:  white;
+  }
+  .reservation-list::before {
+    content:"";
+    position:absolute;
+    width: 83%;
+    height: 1px;
+    border:1px solid #FDDBDB;
+    top:35%;
+    left:9%;
+  }
