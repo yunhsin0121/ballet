@@ -40,16 +40,16 @@ $(document).ready(function () {
 });
 
 // 首頁訂閱按鈕
-let subscribeBtn = document.querySelector('.subscribeBtn');
-let subscribeEmail = document.getElementById('subscribeEmail');
-subscribeBtn.addEventListener('click',e=>{
-    e.preventDefault();
-    if(subscribeEmail.value.trim() === ''){
-        alert('請輸入信箱')
-    }else{
-        alert('已發送優惠碼至信箱！')
-    }
-})
+// let subscribeBtn = document.querySelector('.subscribeBtn');
+// let subscribeEmail = document.getElementById('subscribeEmail');
+// subscribeBtn.addEventListener('click',e=>{
+//     e.preventDefault();
+//     if(subscribeEmail.value.trim() === ''){
+//         alert('請輸入信箱')
+//     }else{
+//         alert('已發送優惠碼至信箱！')
+//     }
+// })
 
 // 聯絡我們頁面-意見回饋按鈕
 
@@ -142,7 +142,7 @@ nextBtn.addEventListener('click',e=>{
              })
         }
      })
-    window.scrollTo(0,0);
+    // window.scrollTo(0,0);
     choosePlan.classList.add('d-none');
     choosePlan.classList.remove('d-block');
     completeInformation.classList.add('d-block');
