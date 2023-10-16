@@ -129,7 +129,7 @@ nextBtn.addEventListener('click',e=>{
              })
         }
      })
-    // window.scrollTo(0,0);
+    window.scrollTo(0,0);
     choosePlan.classList.add('d-none');
     choosePlan.classList.remove('d-block');
     completeInformation.classList.add('d-block');
