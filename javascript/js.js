@@ -2,7 +2,7 @@ $(document).ready(function () {
     // 上滑按鈕
     $("a[href$='.zip']").addClass('bi bi-arrow-up-circle text-secondary fs-1  ') ;
 
-    $('.btn-up').click(function (e) { 
+    $('.btn-up,.submitBtn,.nextBtn').click(function (e) { 
         e.preventDefault();
         $('html,body').animate({
             scrollTop:0},100);
@@ -131,7 +131,6 @@ nextBtn.addEventListener('click',e=>{
         }
      })
     alert(`你選擇的是${experienceName}課程-${levelName}`)
-    window.scrollTo({top:0,behavior:'smooth'})
     choosePlan.classList.add('d-none');
     choosePlan.classList.remove('d-block');
     completeInformation.classList.add('d-block');
