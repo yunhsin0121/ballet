@@ -250,14 +250,20 @@
                   </div>
                 </div>
               </div>
-              <div class="mb-3 col-6">
-                <label for="gender" class="form-label">性別:</label>
-                <select class="form-select" id="gender" aria-label="Default select example" required>
-                  <option value="女">女</option>
-                  <option value="男">男</option>
-                </select>
-                <div class="invalid-feedback">
-                  請輸入內容
+              <div class="row mb-3">
+                <div class="col">
+                  <label for="date" class="form-label">首次上課的報到日</label><br>
+                    <input type="date" id="date" class="form-control" required>
+                </div>
+                <div class="col-6">
+                  <label for="gender" class="form-label">性別:</label>
+                  <select class="form-select" id="gender" aria-label="Default select example" required>
+                    <option value="女">女</option>
+                    <option value="男">男</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    請輸入內容
+                  </div>
                 </div>
               </div>
               <div class="mb-3">
@@ -272,12 +278,6 @@
                 <input type="number" class="form-control" id="number" placeholder="0912-345-678" required>
                 <div class="invalid-feedback">
                   請輸入內容
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="date" class="form-label">首次上課的報到日</label><br>
-                <div class="col-6">
-                  <input type="date" id="date" class="form-control" required>
                 </div>
               </div>
               <div class="text-center" data-aos="fade-up">
