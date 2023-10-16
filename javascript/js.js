@@ -121,6 +121,7 @@ function updatePlanName(){
 //點擊繼續預約按鈕跳表單內容
 let nextBtn = document.querySelector('.nextBtn');
 nextBtn.addEventListener('click',e=>{
+    e.preventDefault();
     ChooseExperienceMenu.forEach(item=>{
         if(item.classList.contains('active')){
             chooseLevelMenu.forEach(item=>{
@@ -129,7 +130,8 @@ nextBtn.addEventListener('click',e=>{
              })
         }
      })
-    window.scrollTo(0,0);
+    alert(`你選擇的是${experienceName}課程-${levelName}`)
+    window.scrollTo({top:0,behavior:'smooth'})
     choosePlan.classList.add('d-none');
     choosePlan.classList.remove('d-block');
     completeInformation.classList.add('d-block');
@@ -162,7 +164,6 @@ submitBtn.addEventListener('click',e=>{
         alert('尚有資料未填寫')
     }else{
         alert('已完成預約，將會寄送通知至電子信箱，如需更改資料請來電通知，謝謝！')
-        window.scrollTo(0,0);
         choosePlan.classList.add('d-none');
         choosePlan.classList.remove('d-block');
         completeInformation.classList.add('d-none');
