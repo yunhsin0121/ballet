@@ -13,43 +13,68 @@
     <link rel="stylesheet" href="stylesheet/all.css">
 </head>
 <body>
-    <div class="fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <div class="container-lg">
-            <a class="navbar-brand" href="index.html">
-            <img src="images/logo-gray.png" alt="logo-image" width="180" class="img-fluid">
-            <h1 class="d-none">Ballet</h1>
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars text-light-secondary fs-2"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-lg justify-content-between">
+        <a class="navbar-brand" href="index.html">
+        <img src="images/logo-gray.png" alt="logo-image" width="180" class="img-fluid">
+        <h1 class="d-none">Ballet</h1>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+        <i class="fa-solid fa-bars text-light-secondary fs-2"></i>
+        </button>
+        <div class="offcanvas offcanvas-end d-lg-none" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header py-3">
+              <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
                 <ul class="navbar-nav ms-auto text-center">
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary fw-bold px-3 mb-2 mb-lg-0" aria-current="page" href="course.html">課程介紹</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary fw-bold px-3 mb-2 mb-lg-0" href="teachers.html">師資介紹</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary fw-bold px-3 mb-2 mb-lg-0" href="classrooms.html">芭蕾空間</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary fw-bold px-3 mb-2 mb-lg-0" href="class-timetable.html">當月課表</a>
-                </li>
-                </ul>
-                <ul class="navbar-nav ms-auto text-center">
-                <li class="nav-item me-lg-2">
-                    <a href="reservation.html" class="btn btn-secondary fw-bold me-lg-2 mb-2 mb-lg-0 w-100">立即預約</a>
-                </li>
-                <li class="nav-item"> 
-                    <a href="contact-us.html" class="btn btn-secondary fw-bold w-100">聯絡我們</a>
-                </li>
+                    <li class="py-3">
+                        <a class="link-light-hover fw-bold w-100 d-flex align-items-center justify-content-center" aria-current="page" href="course.html"><img src="./images/logo-icon-white.png" class="logo-icon me-2" alt="logo-icon" width="15">課程介紹</a>
+                    </li>
+                    <li class="py-3">
+                        <a class="link-light-hover fw-bold w-100 d-flex align-items-center justify-content-center" href="teachers.html"><img src="./images/logo-icon-white.png" class="logo-icon me-2" alt="logo-icon" width="15">師資介紹</a>
+                    </li>
+                    <li class="py-3">
+                        <a class="link-light-hover fw-bold w-100 d-flex align-items-center justify-content-center" href="classrooms.html"><img src="./images/logo-icon-white.png" class="logo-icon me-2" alt="logo-icon" width="15">芭蕾空間</a>
+                    </li>
+                    <li class="py-3">
+                        <a class="link-light-hover fw-bold w-100 d-flex align-items-center justify-content-center" href="class-timetable.html"><img src="./images/logo-icon-white.png" class="logo-icon me-2" alt="logo-icon" width="15">當月課表</a>
+                    </li>
+                    <li class="py-3">
+                        <a href="reservation.html" class="link-light-hover fw-bold w-100 d-flex align-items-center justify-content-center"><img src="./images/logo-icon-white.png" class="logo-icon me-2" alt="logo-icon" width="15">立即預約</a>
+                    </li>
+                    <li class="py-3"> 
+                        <a href="contact-us.html" class="link-light-hover fw-bold w-100 d-flex align-items-center justify-content-center"><img src="./images/logo-icon-white.png" class="logo-icon me-2" alt="logo-icon" width="15">聯絡我們</a>
+                    </li>
                 </ul>
             </div>
         </div>
-      </nav>
+        <ul class="navbar-nav text-center d-none d-lg-flex">
+            <li class="nav-item">
+                <a class="nav-link link-dark-hover fw-bold px-3 mb-2 mb-lg-0" aria-current="page" href="course.html">課程介紹</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-dark-hover fw-bold px-3 mb-2 mb-lg-0" href="teachers.html">師資介紹</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-dark-hover fw-bold px-3 mb-2 mb-lg-0" href="classrooms.html">芭蕾空間</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-dark-hover fw-bold px-3 mb-2 mb-lg-0" href="class-timetable.html">當月課表</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav text-center d-none d-lg-flex">
+            <li class="nav-item me-lg-2">
+                <a href="reservation.html" class="btn btn-secondary fw-bold me-lg-2 mb-2 mb-lg-0 w-100">立即預約</a>
+            </li>
+            <li class="nav-item"> 
+                <a href="contact-us.html" class="btn btn-secondary fw-bold w-100">聯絡我們</a>
+            </li>
+        </ul>
     </div>
+    </nav>
+</div>
     <main class="pt-7">
         <!-- 當月課表 -->
         <section class="container-fluid py-4">

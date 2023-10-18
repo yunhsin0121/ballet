@@ -6,8 +6,6 @@ $(document).ready(function () {
             $(this).children().attr('src', './images/logo-icon-white.png');
         }
     );
-
-
     // 上滑按鈕
     $("a[href$='.zip']").addClass('bi bi-arrow-up-circle text-secondary fs-1  ') ;
 
