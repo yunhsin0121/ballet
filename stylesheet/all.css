@@ -6674,7 +6674,7 @@ textarea.form-control-lg {
 }
 .offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
   --bs-offcanvas-zindex: 1045;
-  --bs-offcanvas-width: 300px;
+  --bs-offcanvas-width: 250px;
   --bs-offcanvas-height: 30vh;
   --bs-offcanvas-padding-x: 1rem;
   --bs-offcanvas-padding-y: 1rem;
@@ -15998,6 +15998,13 @@ textarea.form-control-lg {
 }
 .link-secondary-hover-primary:hover {
   color: #E4B6B6;
+}
+
+.link-dark-hover {
+  color: black;
+}
+.link-dark-hover:hover {
+  color: white;
 }
 
 .link-light-hover {

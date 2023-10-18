@@ -17,6 +17,12 @@
         color: #E4B6B6;;
     }
 }
+.link-dark-hover{
+    color: black;
+    &:hover{
+        color: white;
+    }
+}
 .link-light-hover{
     color: white;
     &:hover{

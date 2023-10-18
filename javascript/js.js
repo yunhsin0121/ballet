@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    // offcanvas選單icon圖片置換
+    $('.link-light-hover').hover(function () {
+            $(this).children().attr('src', './images/logo-icon-black.png');
+        }, function () {
+            $(this).children().attr('src', './images/logo-icon-white.png');
+        }
+    );
+
+
     // 上滑按鈕
     $("a[href$='.zip']").addClass('bi bi-arrow-up-circle text-secondary fs-1  ') ;
 
