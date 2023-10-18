@@ -6674,16 +6674,16 @@ textarea.form-control-lg {
 }
 .offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
   --bs-offcanvas-zindex: 1045;
-  --bs-offcanvas-width: 400px;
+  --bs-offcanvas-width: 300px;
   --bs-offcanvas-height: 30vh;
   --bs-offcanvas-padding-x: 1rem;
   --bs-offcanvas-padding-y: 1rem;
   --bs-offcanvas-color: var(--bs-body-color);
-  --bs-offcanvas-bg: var(--bs-body-bg);
+  --bs-offcanvas-bg: #BBB4AC;
   --bs-offcanvas-border-width: var(--bs-border-width);
-  --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+  --bs-offcanvas-border-color: #BBB4AC;
   --bs-offcanvas-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  --bs-offcanvas-transition: transform 0.3s ease-in-out;
+  --bs-offcanvas-transition: transform 0.5s ease-in-out;
   --bs-offcanvas-title-line-height: 1.5;
 }
 
@@ -15998,6 +15998,13 @@ textarea.form-control-lg {
 }
 .link-secondary-hover-primary:hover {
   color: #E4B6B6;
+}
+
+.link-light-hover {
+  color: white;
+}
+.link-light-hover:hover {
+  color: black;
 }
 
 .btn:hover {

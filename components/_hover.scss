@@ -17,6 +17,12 @@
         color: #E4B6B6;;
     }
 }
+.link-light-hover{
+    color: white;
+    &:hover{
+        color: black;
+    }
+}
 .btn{
     &:hover{
         background-color: transparent;
