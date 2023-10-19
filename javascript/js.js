@@ -64,16 +64,20 @@ let ChooseExperienceMenu = document.querySelectorAll('.ChooseExperience a');
 ChooseExperience.addEventListener('click',e=>{
     e.preventDefault();
     ChooseExperienceMenu.forEach(item=>{
+        item.textContent ='選擇';
         item.classList.remove('active');
      })
    if(e.target.nodeName === 'A'){
     if(e.target.dataset.name  === 'firstTime'){
+        e.target.textContent = '已選擇';
         e.target.classList.add('active');
         experienceName = e.target.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.textContent;
     }else if(e.target.dataset.name === 'short-term'){
+        e.target.textContent = '已選擇';
         e.target.classList.add('active');
         experienceName = e.target.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.textContent;
     }else{
+        e.target.textContent = '已選擇';
         e.target.classList.add('active');
         experienceName = e.target.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.textContent;
     }
