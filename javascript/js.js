@@ -15,13 +15,13 @@ $(document).ready(function () {
             scrollTop:0},100);
     });
 
-    $('.btn-up').hide();
+    $('.slideUp').hide();
     $(window).scroll(function(){
-        if($(window).scrollTop()>100){
-            $('.btn-up').fadeIn();
+        if($(window).scrollTop()>150){
+            $('.slideUp').fadeIn();
         }
         else{
-            $('.btn-up').fadeOut();
+            $('.slideUp').fadeOut();
         }
     });
     // 按鈕特效
