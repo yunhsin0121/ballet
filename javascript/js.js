@@ -132,6 +132,7 @@ function updatePlanName(){
 //點擊繼續預約按鈕跳表單內容
 let nextBtn = document.querySelector('.nextBtn');
 nextBtn.addEventListener('click',e=>{
+    if(experienceName && levelName){
     e.preventDefault();
     ChooseExperienceMenu.forEach(item=>{
         if(item.classList.contains('active')){
@@ -150,6 +151,12 @@ nextBtn.addEventListener('click',e=>{
     completeReservation.classList.remove('d-block');
     choosePlanBtn.classList.remove('active');
     completeInformationBtn.classList.add('active');
+    }else if(experienceName && !levelName){
+        alert('請選擇課程階級')
+    }
+    else{
+        alert(`請選擇課程`)
+    }
 })
 
 // 填寫資料頁面
